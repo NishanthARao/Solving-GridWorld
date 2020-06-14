@@ -1,9 +1,18 @@
-#Solving a 4x4 gridworld using Monte Carlo Estimating Starts.
+#Solving a 4x4 gridworld using Monte Carlo Every-Visit Estimating Starts.
 #The policy pi_(a|s) takes 4 actions equiprobably: Left, Right, Up, Down. Thus pi_(a|s) = 0.25 for all states
 #The agent is transferred deterministically, hence p(s',r|s,a) = 1 for all states
 
 import random
 import numpy as np
+
+#GRID:
+#-------------
+#| 0  1  2  3|
+#| 4  5  6  7|
+#| 8  9 10 11|
+#|12 13 14 15|
+#-------------
+#With states 0,15 being the terminal states
 
 #provide a reward of -1 to all the transitions.
 r = -1

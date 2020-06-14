@@ -5,6 +5,15 @@
 import random
 import numpy as np
 
+#GRID:
+#-------------
+#| 0  1  2  3|
+#| 4  5  6  7|
+#| 8  9 10 11|
+#|12 13 14 15|
+#-------------
+#With states 0,15 being the terminal states
+
 iterations = int(input("Please enter the number of iterations to be made: "))
 #provide a reward of -1 to all the transitions. Assign pi(a|s) = 0.25
 r = -1
